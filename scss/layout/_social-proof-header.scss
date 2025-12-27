@@ -1,0 +1,37 @@
+@use '../abstracts' as a;
+
+.social-proof-header {
+    place-self: start;
+    grid-column: span 1;
+    max-width: 44.5rem;
+    min-width: 33.4rem;
+
+    &__title {
+        font-size: 5.575rem;
+        font-weight: 700;
+        color: var(--very-dark-magenta);
+        line-height: .86em;
+        letter-spacing: -0.035em;
+        margin-bottom: 2.6rem;
+    }
+
+    &__description {
+        font-size: 1.9rem;
+        font-weight: 500;
+        color: var(--dark-grayish-magenta);
+        line-height: 1.32em;
+        letter-spacing: -0.0333em;
+    }
+
+    @include a.breakpoint(tablet) {
+        min-width: .1rem;
+        justify-self: center;
+        text-align: center;
+    
+        &__title {
+            font-size: 4rem;
+            line-height: .8em;
+            margin-bottom: 2.2rem;
+        }
+    }
+}
